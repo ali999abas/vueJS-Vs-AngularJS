@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<link href="style.css" rel="stylesheet" />
+<style>
+div {
+  transition: all linear 0.5s;
+  background-color: lightblue;
+  height: 200px;
+  width: 80%;
+  position: relative;
+  top: 10;
+  left: 0;
+
+    background: red;
+    -webkit-animation: myfirst 5s; /* Chrome, Safari, Opera */
+    animation: myfirst 5s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst {
+    from {background: red;}
+    to {background: yellow;}
+}
+
+/* Standard syntax */
+@keyframes myfirst {
+    from {background: red;}
+    to {background: yellow;}
+}
+
+.ng-hide {
+  height: 0;
+  width: 0;
+  background-color: transparent;
+  top:-200px;
+  left: 200px;
+}
+
+</style>
+<script src="../js/angular.min.js"></script>
+<script src="../js/angular-animate.js"></script>
+
+<body ng-app="myApp">
+
+<h1>Hide the DIV: <input type="checkbox" ng-model="myCheck"></h1>
+
+<div ng-hide="myCheck"></div>
+
+<script>
+var app = angular.module('myApp', ['ngAnimate']);
+</script>
+
+</body>
+</html>
