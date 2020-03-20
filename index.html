@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<title>JavaSecript Frameworks</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/w3-theme-black.css">
+
+<style>/* unvisited link */
+    a:link {
+      color: red;
+    }
+    
+    /* visited link */
+    a:visited {
+      color: green;
+    }
+    
+    /* mouse over link */
+    a:hover {
+      color: hotpink;
+    }
+    
+    /* selected link */
+    a:active {
+      color: blue;
+    }
+    .avatar {
+        vertical-align: middle;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    .container {
+        vertical-align: middle;
+        position: relative;
+        width: 100%;
+    }
+
+    .image {
+        border-radius: 8px;
+        display: block;
+        width: 100%;
+
+        height: auto;
+        align-content: center;
+
+    }
+
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgb(202, 30, 0);
+        overflow: hidden;
+        width: 0;
+        height: 100%;
+        transition: .5s ease;
+    }
+
+    .container:hover .overlay {
+        width: 100%;
+    }
+
+    .text {
+        white-space: nowrap;
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        overflow: hidden;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+
+    .container1 {
+
+        position: relative;
+        width: 100%;
+    }
+
+    .image1 {
+        border-radius: 8px;
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .overlay1 {
+        position: absolute;
+        bottom: 0;
+        left: 100%;
+        right: 0;
+        background-color: rgb(22, 143, 6);
+        overflow: hidden;
+        width: 0;
+        height: 100%;
+        transition: .5s ease;
+    }
+
+    .container1:hover .overlay1 {
+        width: 100%;
+        left: 0;
+    }
+
+    .text1 {
+        white-space: nowrap;
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        overflow: hidden;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+	ul li{
+	font-size:20px;
+
+	}
+</style>
+
+<body>
+
+    <!-- Side Navigation -->
+
+    <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="mySidebar">
+
+        <h1 class="w3-xxxlarge w3-text-theme">Side Navigation</h1>
+        <button class="w3-bar-item w3-button" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
+        <a href="index.html" class="w3-bar-item w3-button">Home</a>
+        <a href="frames1.html" class="w3-bar-item w3-button">Angular Example</a>
+        <a href="frames2.html" class="w3-bar-item w3-button">Vue Example</a>
+        <a href="about.html" class="w3-bar-item w3-button">About</a>
+    </nav>
+
+    <!-- Header -->
+    <header class="w3-container w3-theme w3-padding" id="myHeader">
+        <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i>
+        <div class="w3-center">
+            <h4>BEAUTIFUL RESPONSIVE WEB SITES</h4>
+            <h1 class="w3-xxxlarge w3-animate-bottom">BUILT SPA App with tow framework</h1>
+            <div class="w3-padding-32">
+                <button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey"
+                    onclick="document.getElementById('id01').style.display='block'" style="font-weight:900;">LEARN More
+                    About FrameWorks</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Modal -->
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-top">
+            <header class="w3-container w3-theme-l1">
+                <span onclick="document.getElementById('id01').style.display='none'"
+                    class="w3-button w3-display-topright">×</span>
+                <h4>To Learn More About frameworks </h4>
+                <h5>You can see Our Documentation <i class="fa fa-smile-o"></i></h5>
+            </header>
+            <div class="w3-padding">
+                <p>The Documentation avilable in This link here:</p>
+                <p>Go to our <a class="w3-btn" href="Project.pdf" target="_blank"> Decumentation </a> to learn more!</p>
+            </div>
+            <footer class="w3-container w3-theme-l1">
+                <p>Enjoy</p>
+            </footer>
+        </div>
+    </div>
+
+
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-half">
+            <div class="w3-card w3-container" style="min-height:460px">
+                <h3>AngularJS</h3><br>
+                <a href="frames1.html">
+                    <div class="container">
+                        <img src="images/Angular/6.jpg" alt="Avatar" class="image">
+                        <div class="overlay">
+                            <div class="text">See Examples..</div>
+                        </div>
+                    </div>
+                </a>
+                <h2>AngularJS</h2>
+                <ul style="list-style-type:square;">
+                    <li>AngularJS extends HTML with new attributes</li>
+                    <li>AngularJS is perfect for Single Page Applications (SPAs).</li>
+                    <li>AngularJS is easy to learn.</li>
+                  </ul>
+
+                
+                <a href="frames1.html" >
+                    <h3>See Some Example..</h3>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="w3-half">
+            <div class="w3-card w3-container" style="min-height:460px">
+                <h3>VueJS</h3><br>
+                <a href="frames2.html">
+                    <div class="container1">
+                        <img src="images//Vue/6.png" alt="Avatar" class="image1">
+                        <div class="overlay1">
+                            <div class="text1">See Examples..</div>
+                        </div>
+                    </div>
+                </a>
+                <h2>VueJS</h2>
+
+                <ul style="list-style-type:square;">
+                    <li>open source progressive JavaScript framework</li>
+                    <li>used to simplify web development</li>
+                    <li>VueJS focusses on the view layer</li>
+                  </ul>
+               
+                <a href="frames2.html">
+                    <h3>See Some Example..</h3>
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="w3-container">
+        <hr>
+
+
+
+       
+    </div>
+
+    
+    <hr>
+    <div class="w3-center">
+        <h2>Pagination</h2>
+        <!-- Pagination -->
+        <div class="w3-center w3-padding-32">
+            <div class="w3-bar">
+                <a href="#" class="w3-bar-item w3-button w3-hover-theme">«</a>
+                <a href="frames1.html" class="w3-bar-item w3-button w3-theme w3-hover-theme">1</a>
+                <a href="frames2.html" class="w3-bar-item w3-button w3-hover-theme">2</a>
+                <a href="about.html" class="w3-bar-item w3-button w3-hover-theme">3</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-theme">»</a>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-theme-dark w3-padding-16">
+        <h3>Footer</h3>
+        <p>Powered by <a href="#" target="_blank">albaath Univercity</a></p>
+        <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
+            <span class="w3-text w3-theme-light w3-padding">Go To Top</span> 
+            <a class="w3-text-white" href="#myHeader"><span class="w3-xlarge">
+                    <i class="fa fa-chevron-circle-up"></i></span></a>
+        </div>
+        <p>Remember to check out our  <a href="#" class="w3-btn w3-theme-light"
+                target="_blank"> Reference</a></p>
+    </footer>
+
+    <!-- Script for Sidebar, Tabs, Accordions, Progress bars and slideshows -->
+    <script>
+        // Side navigation
+        function w3_open() {
+            var x = document.getElementById("mySidebar");
+            x.style.width = "100%";
+            x.style.fontSize = "40px";
+            x.style.paddingTop = "10%";
+            x.style.display = "block";
+        }
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+
+       
+     
+
+
+     
+    </script>
+
+</body>
+
+</html>

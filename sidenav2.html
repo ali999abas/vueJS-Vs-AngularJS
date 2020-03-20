@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+        }
+
+        h3 {
+            color: #f1f1f1;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 225px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+        .sidenav a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .main {
+            margin-left: 160px;
+            /* Same as the width of the sidenav */
+            font-size: 28px;
+            /* Increased text to enable scrolling */
+            padding: 0px 10px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sidenav">
+        <a href="content2.html" target="content-page">
+            <h3> Vue Examples:</h3>
+        </a>
+        <a href="VueJSExamples/example1.html" target="content-page">Navigation Menu</a>
+        <a href="VueJSExamples/example2.html" target="content-page">inline-editor </a>
+        <a href="VueJSExamples/example3.html" target="content-page">order-form</a>
+        <a href="VueJSExamples/example4.html" target="content-page">instant-search</a>
+        <a href="VueJSExamples/example5.html" target="content-page">Switchable Grid</a>
+        <a href="VueJSExamples/example6.html" target="content-page">Currency Converter</a>
+        <a href="VueJSExamples/example7.html" target="content-page">Customer Details</a>
+       
+        <a href="VueJSExamples/vue/index.html" target="content-page">ToDoList MVC</a>
+
+       
+        
+
+    </div>
+
+    <div class="main">
+
+    </div>
+
+</body>
+
+</html>
